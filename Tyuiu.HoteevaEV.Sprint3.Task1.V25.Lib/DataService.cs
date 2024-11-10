@@ -6,13 +6,13 @@ namespace Tyuiu.HoteevaEV.Sprint3.Task1.V25.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sum = 0;
+            double umn = 1;
             while(startValue <= stopValue)
             {
-                sum += ((Math.Pow(value, startValue) - (1 / 4)) * Math.Cos(5));
+                umn *= (((Math.Pow(value, startValue)) - (0.25)) * Math.Cos(5));
                 startValue++;
             }
-            return Math.Round(sum, 3);
+            return Math.Round(umn, 3);
         }
     }
 }
