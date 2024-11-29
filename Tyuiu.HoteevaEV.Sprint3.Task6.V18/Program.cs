@@ -23,18 +23,16 @@ namespace Tyuiu.HoteevaEV.Sprint3.Task6.V18
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 10;
             int start = 9;
             int end = 18;
 
-            Console.WriteLine("Ограничение для делителей: <" + x);
             Console.WriteLine("Начало отрезка: " + start);
             Console.WriteLine("Конец отрезка: " + end);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            double res = ds.GetMultiplySeries(x, start, end);
+            double res = ds.GetSumTheDivisors(start, end);
 
             Console.WriteLine("Сумма делителей: " + res);
 

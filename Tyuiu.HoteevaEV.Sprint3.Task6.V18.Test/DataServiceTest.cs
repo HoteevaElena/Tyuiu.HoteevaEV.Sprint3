@@ -5,7 +5,7 @@ namespace Tyuiu.HoteevaEV.Sprint3.Task6.V18.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetMultiplySeries()
+        public void ValidGetSumTheDivisors()
         {
             DataService ds = new DataService();
 
@@ -14,7 +14,7 @@ namespace Tyuiu.HoteevaEV.Sprint3.Task6.V18.Test
             int end = 18;
 
             var wait = 95;
-            var res = ds.GetMultiplySeries(value, start, end);
+            var res = ds.GetSumTheDivisors(start, end);
 
             Assert.AreEqual(wait, res);
 
